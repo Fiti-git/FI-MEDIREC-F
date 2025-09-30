@@ -1,0 +1,172 @@
+/* Layout adjustments */
+.login-wrapper {
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.login-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.login-right {
+  flex: 1;
+  background: #faf7f7; /* Dark purple */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-right img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.login-content {
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Brand styles */
+.brand {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+/* Welcome and subtext */
+.welcome-text {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.subtext {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Input box styling */
+.input-box {
+  margin-bottom: 15px;
+}
+
+.input-box input, .input-box select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+/* Select input for role */
+.input-box select {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Button Styling */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0f172a;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #1e293b;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Hint text */
+.hint {
+  font-size: 12px;
+  color: #000;
+  margin-top: 20px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.arrow {
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  transform: rotate(45deg);
+  color: #000;
+}
+
+/* Footer */
+.footer {
+  font-size: 12px;
+  color: #999;
+  margin-top: 60px;
+}
+
+.footer a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Toggle button for Register/Login */
+.toggle-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Additional responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .login-wrapper {
+    flex-direction: column;
+  }
+
+  .login-left, .login-right {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .login-right img {
+    max-width: 90%;
+  }
+
+  .login-content {
+    padding: 20px;
+  }
+
+  .login-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,279 @@
+.dashboard-container {
+  padding: 24px;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  color: #0a1a2e;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.dashboard-header h2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-outline {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #0a1a2e;
+}
+
+.btn-outline:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-primary {
+  background-color: #0a1a2e;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #082040;
+}
+
+/* Specific style for the logout button to differentiate it */
+.btn-logout {
+  background-color: #f44336; /* Red color for logout */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Make it a square button */
+  height: 40px; /* Make it a square button */
+  padding: 0; /* Remove default padding for icon only */
+  border-radius: 50%; /* Make it round */
+}
+
+.btn-logout:hover {
+  background-color: #d32f2f;
+}
+
+
+.manage-files-text {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.dashboard-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.search-filter {
+  display: flex;
+  gap: 12px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  width: 250px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #0a1a2e;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-icon {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0a1a2e;
+}
+
+.btn-icon:hover {
+  background-color: #f0f0f0;
+}
+
+.btn-icon.active {
+  background-color: #0a1a2e;
+  color: #fff;
+  border-color: #0a1a2e;
+}
+
+.file-table-placeholder {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  min-height: 200px;
+  color: #999;
+  font-style: italic;
+}
+/* Modal background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 400px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  display: flex; /* Added for better internal layout */
+  flex-direction: column; /* Added for better internal layout */
+}
+
+/* For the JSON viewer modal, make it wider */
+.modal-content.large-modal {
+  width: 80%; /* Adjust as needed */
+  max-width: 900px; /* Max width for larger screens */
+  height: 90%; /* Adjust as needed for height */
+  max-height: 800px; /* Max height for larger screens */
+}
+
+
+.modal-content h3 {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.text-input,
+.file-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px; /* Adjusted from 0 to 12px for consistency */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding doesn't expand the width */
+}
+
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px; /* Add some space above the buttons */
+}
+
+.file-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.file-table th, .file-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.file-table th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+.actions-cell button {
+  margin-right: 8px;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.actions-cell button:hover {
+  background-color: #ddd;
+}
+
+/* Pagination Styles */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination-controls button {
+  background-color: #0a1a2e;
+  color: #fff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-controls button:hover:not(:disabled) {
+  background-color: #082040;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
