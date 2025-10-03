@@ -136,7 +136,7 @@ function Login() {
           </div>
 
           <footer className="footer">
-            @2025 FITI – <a href="https://fiti.solutions" target="_blank" rel="noreferrer">fiti.solutions</a>
+            @2025 AHG – <a href="https://alphahmc.com/" target="_blank" rel="noreferrer">ALPHA HEALTH GROUP</a>
           </footer>
         </div>
       </div>
@@ -144,7 +144,7 @@ function Login() {
       <div className="login-right">
         <img
           src="https://alphahmc.com/assets/img/na-troi-logo-red.svg"
-          alt="Medical AI Illustration"
+          alt="ALPHA HEALTH GROUP"
         />
       </div>
     </div>
