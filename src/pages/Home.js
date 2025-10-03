@@ -16,7 +16,8 @@ function Dashboard() {
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10; // Display 10 records per page
 
-  const BASE_URL = 'http://206.189.156.71:5000'; // Your backend base URL
+  // const BASE_URL = 'http://206.189.156.71:5000'; // Your backend base URL
+  const BASE_URL = 'http://128.199.2.245:5000'; // Your backend base URL
 
   // Function to fetch files from the backend
   const fetchFiles = async () => {

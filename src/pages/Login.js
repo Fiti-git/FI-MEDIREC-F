@@ -11,7 +11,8 @@ function Login() {
   const [isRegistering, setIsRegistering] = useState(false);
   const navigate = useNavigate();
 
-  const API_BASE = 'http://206.189.156.71:5000/api/accounts'; // Change this to your Django backend URL
+  // const API_BASE = 'http://206.189.156.71:5000/api/accounts'; // Change this to your Django backend URL
+  const API_BASE = 'http://128.199.2.245/api/accounts'; // Change this to your Django backend URL
 
   const handleLoginSubmit = async (e) => {
     e.preventDefault();

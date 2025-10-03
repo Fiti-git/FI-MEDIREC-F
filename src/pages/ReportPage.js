@@ -5,7 +5,8 @@ const AllReportsPage = () => {
   const [reports, setReports] = useState([]);
 
   useEffect(() => {
-    fetch("http://206.189.156.71:5000/api/documents/results/")
+    //fetch("http://206.189.156.71:5000/api/documents/results/")
+    fetch("http://128.199.2.245:5000/api/documents/results/")
       .then((res) => res.json())
       .then((data) => {
         setReports(data);
